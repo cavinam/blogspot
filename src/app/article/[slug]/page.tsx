@@ -6,7 +6,7 @@ import {
   TypeBlogPost,
   TypeBlogPostFields,
   TypeBlogPostSkeleton,
-} from "@/contentful/blogPost.types";
+} from "@/contentful/types/blogPost.types";
 import contentfulClient from "@/contentful/contentfulClient";
 import Image from "next/image";
 import { useParams } from "next/navigation";

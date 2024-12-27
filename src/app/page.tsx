@@ -2,7 +2,7 @@ import contentfulClient from "@/contentful/contentfulClient";
 import {
   TypeBlogPostSkeleton,
   IContenfulasset,
-} from "@/contentful/blogPost.types";
+} from "@/contentful/types/blogPost.types";
 import Image from "next/image";
 import Link from "next/link";
 import RichText from "@/components/global/RichText";
