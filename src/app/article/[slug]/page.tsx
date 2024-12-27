@@ -1,12 +1,7 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import {
-  IContenfulasset,
-  TypeBlogPost,
-  TypeBlogPostFields,
-  TypeBlogPostSkeleton,
-} from "@/contentful/types/blogPost.types";
+import { IContenfulasset } from "@/contentful/types/blogPost.types";
 import contentfulClient from "@/contentful/contentfulClient";
 import Image from "next/image";
 import { useParams } from "next/navigation";
