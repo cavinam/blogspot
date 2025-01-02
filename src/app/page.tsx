@@ -27,13 +27,16 @@ export default async function Home() {
           posts.items?.map((blog, idx) => (
             <div key={idx} className="my-10">
               <Link href={`article/${blog.fields.slug}`}>
-                <div className="relative h-80 w-[200] overflow-hidden rounded-lg shadow transition hover:shadow-lg">
+                <div className="relative">
                   <Image
                     src={`https:${
                       (blog.fields.image as IContenfulasset)?.fields.file.url
                     }`}
                     alt="gambar"
-                    fill
+                    width="0"
+                    height="0"
+                    sizes="100vw"
+                    style={{ width: "600px", height: "200px" }}
                   />
                 </div>
                 <div className="mt-2 line-clamp-3 text-sm/relaxed text-gray-500 object-cover">
